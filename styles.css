@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    background: rgb(46, 46, 48);
+    color: aliceblue;
+    font-family: Roboto;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 64px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    width: 50%;
+    height: 100%;
+}
+
+select:focus {
+    outline: none;
+}
+
+select {
+    padding: 0.5em;
+    border-radius: 8px;
+    border: 2px solid blue;
+}
+
+.select-grid {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    scale: 1.05;
+}
+
+.container {
+    width: 640px;
+    height: 640px;
+    background:rgb(116, 116, 119);
+    border: 2px solid white;
+    border-radius: 8px;
+    margin: auto;
+
+    display: grid;
+}
+
+.cell {
+    transition: all 0.4s;
+    border: 1px solid white;
+}
+
+.template-4x4 {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.template-8x8 {
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.template-16x16 {
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+}
+.cell-4x4 {
+    width: 160px;
+    height: 160px;
+}
+.cell-8x8 {
+    width: 80px;
+    height: 80px;
+}
+.cell-16x16 {
+    width: 40px;
+    height: 40px;
+}
+
+.background-black {
+    background-color: rgb(26, 24, 24);
+}
